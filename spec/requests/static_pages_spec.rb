@@ -11,7 +11,8 @@ describe "Static pages" do
     end
     it "should have the right title" do
       visit '/static_pages/home'
-      expect(page).to have_title("#{base_title} | Home")
+      expect(page).to have_title("#{base_title}")
+#      expect(page).to have_title("App3, the best app on planet Zarflax")
     end
   end
 
@@ -23,6 +24,7 @@ describe "Static pages" do
     it "should have the right title" do
       visit '/static_pages/help'
       expect(page).to have_title("#{base_title} | Help")
+#      expect(page).to have_title("App3, the best app on planet Zarflax | Help")
     end
   end
 
@@ -34,6 +36,7 @@ describe "Static pages" do
     it "should have the right title" do
       visit '/static_pages/about'
       expect(page).to have_title("#{base_title} | About")
+#      expect(page).to have_title("App3, the best app on planet Zarflax | About")
     end
   end
 
@@ -45,6 +48,7 @@ describe "Static pages" do
     it "should have the right title" do
       visit '/static_pages/contact'
       expect(page).to have_title("#{base_title} | Contact")
+#      expect(page).to have_title("App3, the best app on planet Zarflax | Contact")
     end
   end
  
