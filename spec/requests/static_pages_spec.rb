@@ -6,11 +6,11 @@ describe "Static pages" do
 
   describe "Home page" do
     it "should have the content 'App3'" do
-      visit '/static_pages/home'
+      visit '/'
       expect(page).to have_content('App3')
     end
     it "should have the right title" do
-      visit '/static_pages/home'
+      visit '/'
       expect(page).to have_title("#{base_title}")
 #      expect(page).to have_title("App3, the best app on planet Zarflax")
     end
@@ -18,11 +18,11 @@ describe "Static pages" do
 
   describe "Help page" do
     it "should have the content 'Help me!'" do
-      visit '/static_pages/help'
+      visit '/help'
       expect(page).to have_content('Help me!')
     end
     it "should have the right title" do
-      visit '/static_pages/help'
+      visit '/help'
       expect(page).to have_title("#{base_title} | Help")
 #      expect(page).to have_title("App3, the best app on planet Zarflax | Help")
     end
@@ -30,11 +30,11 @@ describe "Static pages" do
 
   describe "About page" do
     it "should have the content 'About Us'" do
-      visit '/static_pages/about'
+      visit '/about'
       expect(page).to have_content('About Us')
     end
     it "should have the right title" do
-      visit '/static_pages/about'
+      visit '/about'
       expect(page).to have_title("#{base_title} | About")
 #      expect(page).to have_title("App3, the best app on planet Zarflax | About")
     end
@@ -42,11 +42,11 @@ describe "Static pages" do
 
   describe "Contact page" do
     it "should have the content 'Contact Us'" do
-      visit '/static_pages/contact'
+      visit '/contact'
       expect(page).to have_content('Contact Us')
     end
     it "should have the right title" do
-      visit '/static_pages/contact'
+      visit '/contact'
       expect(page).to have_title("#{base_title} | Contact")
 #      expect(page).to have_title("App3, the best app on planet Zarflax | Contact")
     end
